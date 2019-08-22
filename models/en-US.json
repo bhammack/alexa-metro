@@ -106,8 +106,7 @@
                             "name": {
                                 "value": "A04",
                                 "synonyms": [
-                                    "Woodley Park-Zoo",
-                                    "Adams Morgan"
+                                    "Woodley Park-Zoo/Adams Morgan"
                                 ]
                             }
                         },
@@ -116,8 +115,7 @@
                             "name": {
                                 "value": "A05",
                                 "synonyms": [
-                                    "Cleveland Park",
-                                    "Cleveland"
+                                    "Cleveland Park"
                                 ]
                             }
                         },
@@ -126,8 +124,7 @@
                             "name": {
                                 "value": "A06",
                                 "synonyms": [
-                                    "Van Ness",
-                                    "UDC"
+                                    "Van Ness-UDC"
                                 ]
                             }
                         },
@@ -136,7 +133,7 @@
                             "name": {
                                 "value": "A07",
                                 "synonyms": [
-                                    "Tenleytown"
+                                    "Tenleytown-AU"
                                 ]
                             }
                         },
@@ -217,9 +214,7 @@
                             "name": {
                                 "value": "B01",
                                 "synonyms": [
-                                    "Gallery",
-                                    "Chinatown",
-                                    "China Town"
+                                    "Gallery Pl-Chinatown"
                                 ]
                             }
                         },
@@ -246,9 +241,7 @@
                             "name": {
                                 "value": "B04",
                                 "synonyms": [
-                                    "Rhode Island Ave",
-                                    "Brentwood",
-                                    "Rhode Island"
+                                    "Rhode Island Ave-Brentwood"
                                 ]
                             }
                         },
@@ -257,7 +250,7 @@
                             "name": {
                                 "value": "B05",
                                 "synonyms": [
-                                    "Brookland"
+                                    "Brookland-CUA"
                                 ]
                             }
                         },
@@ -269,15 +262,673 @@
                                     "Fort Totten"
                                 ]
                             }
+                        },
+                        {
+                            "id": "B07",
+                            "name": {
+                                "value": "B07",
+                                "synonyms": [
+                                    "Takoma"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B08",
+                            "name": {
+                                "value": "B08",
+                                "synonyms": [
+                                    "Silver Spring"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B09",
+                            "name": {
+                                "value": "B09",
+                                "synonyms": [
+                                    "Forest Glen"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B10",
+                            "name": {
+                                "value": "B10",
+                                "synonyms": [
+                                    "Wheaton"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B11",
+                            "name": {
+                                "value": "B11",
+                                "synonyms": [
+                                    "Glenmont"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B35",
+                            "name": {
+                                "value": "B35",
+                                "synonyms": [
+                                    "NoMa-Gallaudet U"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C01",
+                            "name": {
+                                "value": "C01",
+                                "synonyms": [
+                                    "Metro Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C02",
+                            "name": {
+                                "value": "C02",
+                                "synonyms": [
+                                    "McPherson Square"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C03",
+                            "name": {
+                                "value": "C03",
+                                "synonyms": [
+                                    "Farragut West"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C04",
+                            "name": {
+                                "value": "C04",
+                                "synonyms": [
+                                    "Foggy Bottom-GWU"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C05",
+                            "name": {
+                                "value": "C05",
+                                "synonyms": [
+                                    "Rosslyn"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C06",
+                            "name": {
+                                "value": "C06",
+                                "synonyms": [
+                                    "Arlington Cemetery"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C07",
+                            "name": {
+                                "value": "C07",
+                                "synonyms": [
+                                    "Pentagon"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C08",
+                            "name": {
+                                "value": "C08",
+                                "synonyms": [
+                                    "Pentagon City"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C09",
+                            "name": {
+                                "value": "C09",
+                                "synonyms": [
+                                    "Crystal City"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C10",
+                            "name": {
+                                "value": "C10",
+                                "synonyms": [
+                                    "Ronald Reagan Washington National Airport"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C12",
+                            "name": {
+                                "value": "C12",
+                                "synonyms": [
+                                    "Braddock Road"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C13",
+                            "name": {
+                                "value": "C13",
+                                "synonyms": [
+                                    "King St-Old Town"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C14",
+                            "name": {
+                                "value": "C14",
+                                "synonyms": [
+                                    "Eisenhower Avenue"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "C15",
+                            "name": {
+                                "value": "C15",
+                                "synonyms": [
+                                    "Huntington"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D01",
+                            "name": {
+                                "value": "D01",
+                                "synonyms": [
+                                    "Federal Triangle"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D02",
+                            "name": {
+                                "value": "D02",
+                                "synonyms": [
+                                    "Smithsonian"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D03",
+                            "name": {
+                                "value": "D03",
+                                "synonyms": [
+                                    "LEnfant Plaza"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D04",
+                            "name": {
+                                "value": "D04",
+                                "synonyms": [
+                                    "Federal Center SW"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D05",
+                            "name": {
+                                "value": "D05",
+                                "synonyms": [
+                                    "Capitol South"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D06",
+                            "name": {
+                                "value": "D06",
+                                "synonyms": [
+                                    "Eastern Market"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D07",
+                            "name": {
+                                "value": "D07",
+                                "synonyms": [
+                                    "Potomac Ave"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D08",
+                            "name": {
+                                "value": "D08",
+                                "synonyms": [
+                                    "Stadium-Armory"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D09",
+                            "name": {
+                                "value": "D09",
+                                "synonyms": [
+                                    "Minnesota Ave"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D10",
+                            "name": {
+                                "value": "D10",
+                                "synonyms": [
+                                    "Deanwood"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D11",
+                            "name": {
+                                "value": "D11",
+                                "synonyms": [
+                                    "Cheverly"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D12",
+                            "name": {
+                                "value": "D12",
+                                "synonyms": [
+                                    "Landover"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "D13",
+                            "name": {
+                                "value": "D13",
+                                "synonyms": [
+                                    "New Carrollton"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E01",
+                            "name": {
+                                "value": "E01",
+                                "synonyms": [
+                                    "Mt Vernon Sq 7th St-Convention Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E02",
+                            "name": {
+                                "value": "E02",
+                                "synonyms": [
+                                    "Shaw-Howard U"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E03",
+                            "name": {
+                                "value": "E03",
+                                "synonyms": [
+                                    "U Street/African-Amer Civil War Memorial/Cardozo"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E04",
+                            "name": {
+                                "value": "E04",
+                                "synonyms": [
+                                    "Columbia Heights"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E05",
+                            "name": {
+                                "value": "E05",
+                                "synonyms": [
+                                    "Georgia Ave-Petworth"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E06",
+                            "name": {
+                                "value": "E06",
+                                "synonyms": [
+                                    "Fort Totten"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E07",
+                            "name": {
+                                "value": "E07",
+                                "synonyms": [
+                                    "West Hyattsville"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E08",
+                            "name": {
+                                "value": "E08",
+                                "synonyms": [
+                                    "Prince Georges Plaza"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E09",
+                            "name": {
+                                "value": "E09",
+                                "synonyms": [
+                                    "College Park-U of Md"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E10",
+                            "name": {
+                                "value": "E10",
+                                "synonyms": [
+                                    "Greenbelt"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F01",
+                            "name": {
+                                "value": "F01",
+                                "synonyms": [
+                                    "Gallery Pl-Chinatown"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F02",
+                            "name": {
+                                "value": "F02",
+                                "synonyms": [
+                                    "Archives-Navy Memorial-Penn Quarter"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F03",
+                            "name": {
+                                "value": "F03",
+                                "synonyms": [
+                                    "LEnfant Plaza"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F04",
+                            "name": {
+                                "value": "F04",
+                                "synonyms": [
+                                    "Waterfront"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F05",
+                            "name": {
+                                "value": "F05",
+                                "synonyms": [
+                                    "Navy Yard-Ballpark"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F06",
+                            "name": {
+                                "value": "F06",
+                                "synonyms": [
+                                    "Anacostia"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F07",
+                            "name": {
+                                "value": "F07",
+                                "synonyms": [
+                                    "Congress Heights"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F08",
+                            "name": {
+                                "value": "F08",
+                                "synonyms": [
+                                    "Southern Avenue"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F09",
+                            "name": {
+                                "value": "F09",
+                                "synonyms": [
+                                    "Naylor Road"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F10",
+                            "name": {
+                                "value": "F10",
+                                "synonyms": [
+                                    "Suitland"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F11",
+                            "name": {
+                                "value": "F11",
+                                "synonyms": [
+                                    "Branch Ave"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "G01",
+                            "name": {
+                                "value": "G01",
+                                "synonyms": [
+                                    "Benning Road"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "G02",
+                            "name": {
+                                "value": "G02",
+                                "synonyms": [
+                                    "Capitol Heights"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "G03",
+                            "name": {
+                                "value": "G03",
+                                "synonyms": [
+                                    "Addison Road-Seat Pleasant"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "G04",
+                            "name": {
+                                "value": "G04",
+                                "synonyms": [
+                                    "Morgan Boulevard"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "G05",
+                            "name": {
+                                "value": "G05",
+                                "synonyms": [
+                                    "Largo Town Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "J02",
+                            "name": {
+                                "value": "J02",
+                                "synonyms": [
+                                    "Van Dorn Street"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "J03",
+                            "name": {
+                                "value": "J03",
+                                "synonyms": [
+                                    "Franconia-Springfield"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K01",
+                            "name": {
+                                "value": "K01",
+                                "synonyms": [
+                                    "Court House"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K02",
+                            "name": {
+                                "value": "K02",
+                                "synonyms": [
+                                    "Clarendon"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K03",
+                            "name": {
+                                "value": "K03",
+                                "synonyms": [
+                                    "Virginia Square-GMU"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K04",
+                            "name": {
+                                "value": "K04",
+                                "synonyms": [
+                                    "Ballston-MU"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K05",
+                            "name": {
+                                "value": "K05",
+                                "synonyms": [
+                                    "East Falls Church"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K06",
+                            "name": {
+                                "value": "K06",
+                                "synonyms": [
+                                    "West Falls Church-VT/UVA"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K07",
+                            "name": {
+                                "value": "K07",
+                                "synonyms": [
+                                    "Dunn Loring-Merrifield"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K08",
+                            "name": {
+                                "value": "K08",
+                                "synonyms": [
+                                    "Vienna/Fairfax-GMU"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "N01",
+                            "name": {
+                                "value": "N01",
+                                "synonyms": [
+                                    "McLean"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "N02",
+                            "name": {
+                                "value": "N02",
+                                "synonyms": [
+                                    "Tysons Corner"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "N03",
+                            "name": {
+                                "value": "N03",
+                                "synonyms": [
+                                    "Greensboro"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "N04",
+                            "name": {
+                                "value": "N04",
+                                "synonyms": [
+                                    "Spring Hill"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "N06",
+                            "name": {
+                                "value": "N06",
+                                "synonyms": [
+                                    "Wiehle-Reston East"
+                                ]
+                            }
                         }
-
-
-
-
-
-
-
-
                     ]
                 }
             ]
