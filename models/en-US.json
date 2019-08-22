@@ -1,39 +1,286 @@
 {
-  "interactionModel": {
-      "languageModel": {
-          "invocationName": "hello world",
-          "intents": [
-              {
-                  "name": "AMAZON.CancelIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AMAZON.HelpIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AMAZON.StopIntent",
-                  "samples": []
-              },
-              {
-                  "name": "HelloWorldIntent",
-                  "slots": [],
-                  "samples": [
-                      "hello",
-                      "how are you",
-                      "say hi world",
-                      "say hi",
-                      "hi",
-                      "say hello world",
-                      "say hello"
-                  ]
-              },
-              {
-                  "name": "AMAZON.NavigateHomeIntent",
-                  "samples": []
-              }
-          ],
-          "types": []
-      }
-  }
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "metro",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RailIncidentsIntent",
+                    "slots": [],
+                    "samples": [
+                        "are there any train incidents",
+                        "are there any rail incidents",
+                        "are there any train delays",
+                        "are the trains on time"
+                    ]
+                },
+                {
+                    "name": "BusIncidentsIntent",
+                    "slots": [],
+                    "samples": [
+                        "are there any bus incidents",
+                        "are there any bus delays",
+                        "are the buses on time"
+                    ]
+                },
+                {
+                    "name": "StatusIntent",
+                    "slots": [],
+                    "samples": [
+                        "status report",
+                        "status",
+                        "what's the status",
+                        "what's up",
+                        "what's going on",
+                        "what's the deal",
+                        "current status",
+                        "what's the current status",
+                        "where's my train"
+                    ]
+                },
+                {
+                    "name": "NextTrainIntent",
+                    "slots": [
+                        {
+                            "name": "SourceStation",
+                            "type": "LIST_OF_STATIONS"
+                        },
+                        {
+                            "name": "DestStation",
+                            "type": "LIST_OF_STATIONS"
+                        }
+                    ],
+                    "samples": [
+                        "when's the next train from {SourceStation}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_STATIONS",
+                    "values": [
+                        {
+                            "id": "A01",
+                            "name": {
+                                "value": "A01",
+                                "synonyms": [
+                                    "Metro Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A02",
+                            "name": {
+                                "value": "A02",
+                                "synonyms": [
+                                    "Farragut North"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A03",
+                            "name": {
+                                "value": "A03",
+                                "synonyms": [
+                                    "Dupont Circle"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A04",
+                            "name": {
+                                "value": "A04",
+                                "synonyms": [
+                                    "Woodley Park-Zoo",
+                                    "Adams Morgan"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A05",
+                            "name": {
+                                "value": "A05",
+                                "synonyms": [
+                                    "Cleveland Park",
+                                    "Cleveland"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A06",
+                            "name": {
+                                "value": "A06",
+                                "synonyms": [
+                                    "Van Ness",
+                                    "UDC"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A07",
+                            "name": {
+                                "value": "A07",
+                                "synonyms": [
+                                    "Tenleytown"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A08",
+                            "name": {
+                                "value": "A08",
+                                "synonyms": [
+                                    "Friendship Heights"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A09",
+                            "name": {
+                                "value": "A09",
+                                "synonyms": [
+                                    "Bethesda"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A10",
+                            "name": {
+                                "value": "A10",
+                                "synonyms": [
+                                    "Medical Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A11",
+                            "name": {
+                                "value": "A11",
+                                "synonyms": [
+                                    "Grosvenor-Strathmore"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A12",
+                            "name": {
+                                "value": "A12",
+                                "synonyms": [
+                                    "White Flint"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A13",
+                            "name": {
+                                "value": "A13",
+                                "synonyms": [
+                                    "Twinbrook"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A14",
+                            "name": {
+                                "value": "A14",
+                                "synonyms": [
+                                    "Rockville"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "A15",
+                            "name": {
+                                "value": "A15",
+                                "synonyms": [
+                                    "Shady Grove"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B01",
+                            "name": {
+                                "value": "B01",
+                                "synonyms": [
+                                    "Gallery",
+                                    "Chinatown",
+                                    "China Town"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B02",
+                            "name": {
+                                "value": "B02",
+                                "synonyms": [
+                                    "Judiciary Square"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B03",
+                            "name": {
+                                "value": "B03",
+                                "synonyms": [
+                                    "Union Station"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B04",
+                            "name": {
+                                "value": "B04",
+                                "synonyms": [
+                                    "Rhode Island Ave",
+                                    "Brentwood",
+                                    "Rhode Island"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B05",
+                            "name": {
+                                "value": "B05",
+                                "synonyms": [
+                                    "Brookland"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B06",
+                            "name": {
+                                "value": "B06",
+                                "synonyms": [
+                                    "Fort Totten"
+                                ]
+                            }
+                        }
+
+
+
+
+
+
+
+
+                    ]
+                }
+            ]
+        }
+    }
 }

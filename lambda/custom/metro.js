@@ -1,5 +1,6 @@
 
 const API_URL = 'https://api.wmata.com'
+const API_KEY = '1aae9a153ab84153b1727ccbcab1ddea'
 
 const axios = require('axios');
 axios.defaults.headers.common['api_key'] = API_KEY
@@ -56,13 +57,12 @@ module.exports = {
     },
 
     // Incidents
-
-    getBusIncidents() {
-
+    getElevatorIncidents() {
+        return axios.get(API_URL + '/Incidents.svc/json/ElevatorIncidents')
     },
 
-    getOutages() {
-
+    getBusIncidents() {
+        return axios.get(API_URL + '/Incidents.svc/json/BusIncidents')
     },
 
     getRailIncidents() {

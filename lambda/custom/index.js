@@ -2,30 +2,100 @@
 // Please visit https://alexa.design/cookbook for additional examples on implementing slots, dialog management,
 // session persistence, api calls, and more.
 const Alexa = require('ask-sdk-core');
+const MetroApi = require('./metro');
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speakOutput = 'Welcome, you can say Hello or Help. Which would you like to try?';
+        const speakOutput = 'Welcome to the Washing DC Metro transit skill. How many I assist you?';
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .reprompt(speakOutput)
             .getResponse();
     }
 };
-const HelloWorldIntentHandler = {
+const BusIncidentsIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'HelloWorldIntent';
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'BusIncidentsIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'Hello World!';
-        return handlerInput.responseBuilder
-            .speak(speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
-            .getResponse();
+        return MetroApi.getBusIncidents().then(res => {
+            let busIncidentsCount = res.data.BusIncidents.length;
+            let output;
+
+            if (busIncidentsCount > 0) {
+                output = `There are currently ${busIncidentsCount} bus incidents. Would you like me to read them out?`;
+            } else {
+                output = 'There are no reported bus incidents';
+            }
+
+            return handlerInput.responseBuilder.speak(output).getResponse();
+        });
+    }
+};
+const RailIncidentsIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'RailIncidentsIntent';
+    },
+    handle(handlerInput) {
+        return MetroApi.getRailIncidents().then(res => {
+
+            let incidentsCount = res.data.Incidents.length;
+            let output;
+            if (incidentsCount > 0) {
+                output = `There are currently ${incidentsCount} rail incidents. Would you like me to read them out?`;
+            } else {
+                output = 'There are no reported rail incidents';
+            }
+
+            // would you like me to tell you what they are?
+            return handlerInput.responseBuilder.speak(output).getResponse();
+        });
+    }
+};
+const StatusIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'StatusIntent';
+    },
+    handle(handlerInput) {
+        return MetroApi.getRailPredictions().then(res => {
+            const speakOutput = `Found predictions for ${res.data.Trains.length} trains.`;
+            return handlerInput.responseBuilder.speak(speakOutput).getResponse();
+        });
+    }
+};
+const NextTrainIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'NextTrainIntent';
+    },
+    handle(handlerInput) {
+
+        // Get the station ids
+        let fromStation = handlerInput.requestEnvelope.request.intent.slots.SourceStation.value;
+        let fromStationId = handlerInput.requestEnvelope.request.intent.slots.SourceStation.resolutions.resolutionsPerAuthority[0].values[0].value.id;
+
+        //let toStation = handlerInput.requestEnvelope.request.intent.slots.DestStation.value;
+        //let toStationId = handlerInput.requestEnvelope.request.intent.slots.DestStation.resolutions.resolutionsPerAuthority[0].values[0].value.id;
+
+        return MetroApi.getRailPredictions([fromStationId]).then(res => {
+            //const speakOutput = `The next train from ${fromStation} or ${fromStationId} to ${toStation} or ${toStationId} is coming!`;
+
+            let nextTrain = res.data.Trains[0];
+
+            const speakOutput = `The next train into ${fromStation} departs for ${nextTrain.DestinationName} in ${nextTrain.Min} minutes.`
+            
+            
+            return handlerInput.responseBuilder.speak(speakOutput).getResponse();
+
+
+
+        });
     }
 };
 const HelpIntentHandler = {
@@ -108,7 +178,10 @@ const ErrorHandler = {
 exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
         LaunchRequestHandler,
-        HelloWorldIntentHandler,
+        StatusIntentHandler,
+        NextTrainIntentHandler,
+        BusIncidentsIntentHandler,
+        RailIncidentsIntentHandler,
         HelpIntentHandler,
         CancelAndStopIntentHandler,
         SessionEndedRequestHandler,

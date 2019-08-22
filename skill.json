@@ -3,11 +3,11 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Sample Short Description",
+          "summary": "WMATA Metro Locator",
           "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
+            "Alexa open Metro",
+            "Alexa, ask Metro when's the next bus?",
+            "Alexa, ask Metro when's the next train?"
           ],
           "name": "skill-alexa-metro",
           "description": "Sample Full Description"

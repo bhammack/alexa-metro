@@ -6,11 +6,11 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "fb9453795fde1c60a847ea36f5897412"
+          "eTag": "8656f01b035f19a2b8f8103633ab3b17"
         },
         "interactionModel": {
           "en-US": {
-            "eTag": "27cec0ce75e2f8861f5505075a99718d"
+            "eTag": "f75f21179b7f31f166b6e71a70589787"
           }
         },
         "lambda": [
@@ -23,7 +23,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-skill-alexa-metro-default",
             "handler": "index.handler",
-            "revisionId": "06bad1bb-9922-4e23-a3e6-ccc0ba7c3d7c",
+            "revisionId": "3a037f9c-470e-4044-90a3-5bfaef4e3165",
             "runtime": "nodejs8.10"
           }
         ]
